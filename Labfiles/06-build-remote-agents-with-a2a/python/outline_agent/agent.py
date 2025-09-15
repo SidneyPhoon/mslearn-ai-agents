@@ -28,7 +28,7 @@ class OutlineAgent:
         # Create the title agent
         self.agent = self.client.create_agent(
             model=os.environ['MODEL_DEPLOYMENT_NAME'],
-            name='foundry-outline-agent',
+            name='foundry-outline-agent-A2A',
             instructions="""
             You are a helpful writing assistant.
             Based on the provided title or topic, write a concise outline with 4 to 6 key sections.

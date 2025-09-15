@@ -1,4 +1,4 @@
-PROJECT_ENDPOINT="https://sp-foundry-proj-swe-cen-resource.services.ai.azure.com/api/projects/sp-foundry-proj-swe-central"
+PROJECT_ENDPOINT=""
 MODEL_DEPLOYMENT_NAME="gpt-4o"
 SERVER_URL="localhost"
 ROUTING_AGENT_PORT=10009
