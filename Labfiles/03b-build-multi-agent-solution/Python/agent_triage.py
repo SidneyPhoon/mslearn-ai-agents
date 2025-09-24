@@ -16,6 +16,7 @@ os.system('cls' if os.name=='nt' else 'clear')
 load_dotenv()
 project_endpoint = os.getenv("PROJECT_ENDPOINT")
 model_deployment = os.getenv("MODEL_DEPLOYMENT_NAME")
+phi_model_deployment = os.getenv("PHI_MODEL_DEPLOYMENT_NAME")
 
 
 # Connect to the agents client
@@ -66,7 +67,8 @@ with agents_client:
     """
 
     team_agent = agents_client.create_agent(
-        model=model_deployment,
+        #model=model_deployment,
+        model=phi_model_deployment,
         name=team_agent_name,
         instructions=team_agent_instructions
     )
